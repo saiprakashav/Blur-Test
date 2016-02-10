@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlblur"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="300dip"
+        android:layout_height="400dip"
+        android:layout_above="@+id/dummy_button"
+        android:layout_gravity="center"
+        android:layout_margin="2dip"
+        android:src="@drawable/galata" />
+
+    <Button
+        android:id="@+id/dummy_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="6dp"
+        android:background="@drawable/background_button"
+        android:text="Start Blurred Activity"
+        android:textColor="#000000" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_gravity="bottom"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4990016429590154/5769346020" />
+
+</LinearLayout>
